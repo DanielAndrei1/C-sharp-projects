@@ -1,0 +1,22 @@
+C:\Users\Dany\source\repos\Elevator\Elevator\obj\Debug\Elevator.csprojAssemblyReference.cache
+C:\Users\Dany\source\repos\Elevator\Elevator\obj\Debug\Elevator.Form1.resources
+C:\Users\Dany\source\repos\Elevator\Elevator\obj\Debug\Elevator.Properties.Resources.resources
+C:\Users\Dany\source\repos\Elevator\Elevator\obj\Debug\Elevator.csproj.GenerateResource.cache
+C:\Users\Dany\source\repos\Elevator\Elevator\obj\Debug\Elevator.csproj.CoreCompileInputs.cache
+C:\Users\Dany\source\repos\Elevator\Elevator\bin\Debug\Elevator.exe.config
+C:\Users\Dany\source\repos\Elevator\Elevator\bin\Debug\Elevator.exe
+C:\Users\Dany\source\repos\Elevator\Elevator\bin\Debug\Elevator.pdb
+C:\Users\Dany\source\repos\Elevator\Elevator\obj\Debug\Elevator.exe
+C:\Users\Dany\source\repos\Elevator\Elevator\obj\Debug\Elevator.pdb
+C:\Users\Dany\source\repos\Elevator\Elevator\bin\Debug\Database.mdb
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\bin\Debug\Database.mdb
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\bin\Debug\Elevator.exe.config
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\bin\Debug\Elevator.exe
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\bin\Debug\Elevator.pdb
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\obj\Debug\Elevator.csprojResolveAssemblyReference.cache
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\obj\Debug\Elevator.Form1.resources
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\obj\Debug\Elevator.Properties.Resources.resources
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\obj\Debug\Elevator.csproj.GenerateResource.Cache
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\obj\Debug\Elevator.csproj.CoreCompileInputs.cache
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\obj\Debug\Elevator.exe
+C:\Users\Dany\Desktop\Web-Development-master\Elevator in C#\Elevator\obj\Debug\Elevator.pdb
