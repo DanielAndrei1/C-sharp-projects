@@ -36,5 +36,4 @@ Elevator:
 1. Clone or download the zip file.
 2. Install .NET Framework 4.6.1 from here: https://dotnet.microsoft.com/en-us/download/visual-studio-sdks?cid=getdotnetsdk
 3. Open the project in Visual Studio.
-4. Hit Run.
-!
+4. Hit Run!
