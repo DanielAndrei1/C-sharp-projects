@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Data.OleDb;
 using System.ComponentModel;
+using Elevator.Properties;
+
 
 namespace Elevator
 {
@@ -74,7 +76,7 @@ namespace Elevator
 
 
 
-        private void PictureBox6_Click(object sender, EventArgs e) //Image click to go to Floor 0
+        private void BtnGoingDown_Click(object sender, EventArgs e) //Image click to go to Floor 0
         {
             picture6cliked = true;
             dbinsert_lv0 = true;
@@ -362,7 +364,7 @@ namespace Elevator
                string connetionString = null;
                OleDbConnection connection;
                OleDbDataAdapter oledbAdapter;
-               connetionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Dany\source\repos\Elevator\Elevator\Database.mdb";
+               connetionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\\Database.mdb";
                
                try
                {
@@ -409,13 +411,13 @@ namespace Elevator
 
                if (picture6cliked == true)
                {
-                ControlPaint.DrawBorder(e.Graphics, pictureBox6.ClientRectangle, Color.Red, ButtonBorderStyle.Solid);
+                ControlPaint.DrawBorder(e.Graphics, BtnGoingDown.ClientRectangle, Color.Red, ButtonBorderStyle.Solid);
                 control_panel_btn_paint_6 = true;
 
                 }
                 else
                 {
-                ControlPaint.DrawBorder(e.Graphics, pictureBox6.ClientRectangle, Color.White, ButtonBorderStyle.Solid);
+                ControlPaint.DrawBorder(e.Graphics, BtnGoingDown.ClientRectangle, Color.White, ButtonBorderStyle.Solid);
                 control_panel_btn_paint_6 = false;
                 }
             }
@@ -509,7 +511,7 @@ namespace Elevator
             currentDate.ToString("d/m/yyyy");
             string connetionString = null;
             OleDbConnection connection;
-            connetionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Dany\source\repos\Elevator\Elevator\Database.mdb";
+            connetionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\\Database.mdb";
             if (dbinsert_lv1 == true)
             {
                 try

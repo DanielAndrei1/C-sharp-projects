@@ -77,15 +77,15 @@
             this.lv1sign = new System.Windows.Forms.PictureBox();
             this.lv0sign = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.BtnGoingDown = new System.Windows.Forms.PictureBox();
             this.DataSet = new System.Windows.Forms.DataGridView();
-            this.elevatorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet1 = new Elevator.DatabaseDataSet1();
-            this.elevatorTableAdapter2 = new Elevator.DatabaseDataSet1TableAdapters.ElevatorTableAdapter();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.elevatorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet1 = new Elevator.DatabaseDataSet1();
+            this.elevatorTableAdapter2 = new Elevator.DatabaseDataSet1TableAdapters.ElevatorTableAdapter();
             Log = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -116,11 +116,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.lv1sign)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lv0sign)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGoingDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevatorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Log
+            // 
+            Log.BackColor = System.Drawing.SystemColors.ButtonFace;
+            Log.Location = new System.Drawing.Point(151, 501);
+            Log.Name = "Log";
+            Log.Size = new System.Drawing.Size(75, 23);
+            Log.TabIndex = 27;
+            Log.Text = "Log";
+            Log.UseVisualStyleBackColor = false;
+            Log.Click += new System.EventHandler(this.Log_Click);
             // 
             // bgw
             // 
@@ -470,7 +481,7 @@
             this.ControlPanel.Controls.Add(this.lv1sign);
             this.ControlPanel.Controls.Add(this.lv0sign);
             this.ControlPanel.Controls.Add(this.pictureBox7);
-            this.ControlPanel.Controls.Add(this.pictureBox6);
+            this.ControlPanel.Controls.Add(this.BtnGoingDown);
             this.ControlPanel.Location = new System.Drawing.Point(595, 37);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Size = new System.Drawing.Size(242, 604);
@@ -498,17 +509,6 @@
             this.CloseDoors.TabIndex = 5;
             this.CloseDoors.TabStop = false;
             this.CloseDoors.Click += new System.EventHandler(this.CloseDoors_Click);
-            // 
-            // Log
-            // 
-            Log.BackColor = System.Drawing.SystemColors.ButtonFace;
-            Log.Location = new System.Drawing.Point(151, 501);
-            Log.Name = "Log";
-            Log.Size = new System.Drawing.Size(75, 23);
-            Log.TabIndex = 27;
-            Log.Text = "Log";
-            Log.UseVisualStyleBackColor = false;
-            Log.Click += new System.EventHandler(this.Log_Click);
             // 
             // arrowupcp
             // 
@@ -580,17 +580,17 @@
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             this.pictureBox7.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBox7_Paint);
             // 
-            // pictureBox6
+            // BtnGoingDown
             // 
-            this.pictureBox6.Image = global::Elevator.Properties.Resources.Downlevel0;
-            this.pictureBox6.Location = new System.Drawing.Point(98, 277);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(45, 46);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.PictureBox6_Click);
-            this.pictureBox6.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox6_Paint);
+            this.BtnGoingDown.Image = global::Elevator.Properties.Resources.Downlevel0;
+            this.BtnGoingDown.Location = new System.Drawing.Point(98, 277);
+            this.BtnGoingDown.Name = "BtnGoingDown";
+            this.BtnGoingDown.Size = new System.Drawing.Size(45, 46);
+            this.BtnGoingDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnGoingDown.TabIndex = 7;
+            this.BtnGoingDown.TabStop = false;
+            this.BtnGoingDown.Click += new System.EventHandler(this.BtnGoingDown_Click);
+            this.BtnGoingDown.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox6_Paint);
             // 
             // DataSet
             // 
@@ -607,20 +607,6 @@
             this.DataSet.Size = new System.Drawing.Size(494, 547);
             this.DataSet.TabIndex = 4;
             this.DataSet.Visible = false;
-            // 
-            // elevatorBindingSource
-            // 
-            this.elevatorBindingSource.DataMember = "Elevator";
-            this.elevatorBindingSource.DataSource = this.databaseDataSet1;
-            // 
-            // databaseDataSet1
-            // 
-            this.databaseDataSet1.DataSetName = "DatabaseDataSet1";
-            this.databaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // elevatorTableAdapter2
-            // 
-            this.elevatorTableAdapter2.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -646,6 +632,20 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "Date and time";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 150;
+            // 
+            // elevatorBindingSource
+            // 
+            this.elevatorBindingSource.DataMember = "Elevator";
+            this.elevatorBindingSource.DataSource = this.databaseDataSet1;
+            // 
+            // databaseDataSet1
+            // 
+            this.databaseDataSet1.DataSetName = "DatabaseDataSet1";
+            this.databaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // elevatorTableAdapter2
+            // 
+            this.elevatorTableAdapter2.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -687,7 +687,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lv1sign)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lv0sign)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGoingDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevatorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).EndInit();
@@ -725,7 +725,7 @@
             private System.Windows.Forms.PictureBox blanklv1;
             private System.Windows.Forms.PictureBox pictureBox8;
             private System.Windows.Forms.PictureBox pictureBox11;
-            private System.Windows.Forms.PictureBox pictureBox6;
+            private System.Windows.Forms.PictureBox BtnGoingDown;
             private System.Windows.Forms.PictureBox pictureBox7;
             private System.Windows.Forms.PictureBox lv0sign;
             private System.Windows.Forms.PictureBox lv1sign;
